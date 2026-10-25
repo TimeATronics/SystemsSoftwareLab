@@ -1,9 +1,6 @@
 /*
- * Q37 (part 2). FIFO one-way communication: reader. Opens the FIFO for
- * reading (blocks until the writer arrives), reads one message and
- * displays it.
- * Run in one terminal: ./bin/037_part002
- * Run in another    : ./bin/037_part001
+ * Q37 (ii). FIFO Communication (One-Way): Write two programs to enable
+ * communication through FIFO using one-way communication.
  */
 #include <fcntl.h>
 #include <stdio.h>
@@ -11,7 +8,7 @@
 #include <unistd.h>
 
 int main(void) {
-    mkfifo("fifo1", 0666); /* ignore EEXIST on later runs */
+    mknod("fifo1", S_IFIFO | 0666, 0); /* ignore EEXIST on later runs */
 
     int fd = open("fifo1", O_RDONLY); /* blocks until a writer opens it */
     if (fd == -1) { perror("open fifo1"); return 1; }

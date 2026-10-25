@@ -1,10 +1,9 @@
 /*
- * Q61. Catch signals with the sigaction system call:
- *   ./bin/061 segv    SIGSEGV
- *   ./bin/061 int     SIGINT
- *   ./bin/061 fpe     SIGFPE
- *      sigaction() is the portable version of signal() and gives control
- *      over the signal mask and flags.
+ * Q61. Signal Handling with sigaction: Write separate programs using the
+ * sigaction system call to catch the following signals:
+ *   SIGSEGV
+ *   SIGINT
+ *   SIGFPE
  */
 #include <signal.h>
 #include <stdio.h>

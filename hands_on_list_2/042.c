@@ -1,10 +1,14 @@
 /*
- * Q42. Print information about a message queue using the msqid_ds and
- *      ipc_perm structures: permissions, uid, gid, last send and receive
- *      times, last change time, size of the queue, number of messages,
- *      maximum number of bytes allowed and the PIDs of the last msgsnd
- *      and msgrcv.
- *      Run ./bin/041 and ./bin/043 first to have a queue with a message.
+ * Q42. Message Queue Information: Write a program to print information about
+ * a message queue using msqid_ds and ipc_perm structures:
+ *   Access permission
+ *   UID, GID
+ *   Time of last message sent and received
+ *   Time of last change in the message queue
+ *   Size of the queue
+ *   Number of messages in the queue
+ *   Maximum number of bytes allowed
+ *   PID of the msgsnd and msgrcv
  */
 #include <stdio.h>
 #include <sys/ipc.h>

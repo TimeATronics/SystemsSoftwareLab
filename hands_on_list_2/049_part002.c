@@ -1,7 +1,7 @@
 /*
- * Q49 (part 2). Protect shared memory from concurrent write access with a
- * binary semaphore. Two children add 10000 each to a shared counter; the
- * final value must be 20000.
+ * Q49 (ii). Semaphore Implementation: Write a program to implement a
+ * semaphore to protect any critical section:
+ *   Protect shared memory from concurrent write access
  */
 #include <stdio.h>
 #include <sys/ipc.h>

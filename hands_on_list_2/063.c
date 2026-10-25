@@ -1,7 +1,7 @@
 /*
- * Q63. Create an orphan process: the child sends SIGKILL to the parent
- *      with the kill system call, so the still-running child is
- *      re-parented to init (PID 1).
+ * Q63. Creating an Orphan Process: Write a program to create an orphan
+ * process. Utilize the kill system call to send a SIGKILL signal from the
+ * child process to the parent process.
  */
 #include <signal.h>
 #include <stdio.h>

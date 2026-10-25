@@ -1,8 +1,8 @@
 /*
- * Q34. Execute ls -l | wc with three different redirection tricks:
- *   a. dup()    b. dup2()    c. fcntl(F_DUPFD)
- * For each variant the parent forks two children connected by a pipe:
- * the first execs ls -l, the second execs wc.
+ * Q34. Executing ls -l | wc: Write a program to execute ls -l | wc using:
+ *   dup
+ *   dup2
+ *   fcntl
  */
 #include <fcntl.h>
 #include <stdio.h>

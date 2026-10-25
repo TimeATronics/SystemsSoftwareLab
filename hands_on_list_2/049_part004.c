@@ -1,6 +1,7 @@
 /*
- * Q49 (part 4). Remove the created semaphore with semctl(IPC_RMID).
- *      Check with: $ ipcs -s
+ * Q49 (iv). Semaphore Implementation: Write a program to implement a
+ * semaphore to protect any critical section:
+ *   Remove the created semaphore
  */
 #include <stdio.h>
 #include <sys/ipc.h>

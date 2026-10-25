@@ -1,7 +1,7 @@
 /*
- * Q60. Ignore SIGINT with signal(SIGINT, SIG_IGN), then reset it to the
- *      default action with signal(SIGINT, SIG_DFL). The second raise
- *      terminates the process, which is the default action of SIGINT.
+ * Q60. Ignoring and Resetting Signals: Write a program to ignore a SIGINT
+ * signal and then reset it to the default action using the signal system
+ * call.
  */
 #include <signal.h>
 #include <stdio.h>

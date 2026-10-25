@@ -1,6 +1,7 @@
 /*
- * Q31. Create a pipe, write into it, read from it and display the content
- *      on the monitor.
+ * Q31. Pipe Creation and Communication: Write a simple program to create a
+ * pipe, write to the pipe, read from the pipe, and display the content on
+ * the monitor.
  */
 #include <stdio.h>
 #include <string.h>

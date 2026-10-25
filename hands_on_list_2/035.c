@@ -1,7 +1,7 @@
 /*
- * Q35. Find the number of directories in the current directory with
- *      ls -l | grep ^d | wc, using only dup2() for the redirection.
- *      Three children share two pipes: ls -> grep -> wc.
+ * Q35. Counting Directories with dup2: Write a program to find the total
+ * number of directories in the present working directory using ls -l | grep
+ * ^d | wc. Implement the solution using only dup2.
  */
 #include <stdio.h>
 #include <sys/wait.h>

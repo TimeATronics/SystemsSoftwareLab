@@ -1,12 +1,13 @@
 /*
- * Q57. Print system limitations using sysconf():
- *   a. maximum length of arguments in the exec family (_SC_ARG_MAX)
- *   b. maximum number of simultaneous processes per user ID (_SC_CHILD_MAX)
- *   c. number of clock ticks (jiffies) per second (_SC_CLK_TCK)
- *   d. maximum number of open files (_SC_OPEN_MAX)
- *   e. size of a page (_SC_PAGESIZE)
- *   f. total number of pages in physical memory (_SC_PHYS_PAGES)
- *   g. currently available pages in physical memory (_SC_AVPHYS_PAGES)
+ * Q57. System Limitation Exploration: Write a program to print system
+ * limitations for:
+ *   Maximum length of arguments in the exec family of functions.
+ *   Maximum number of simultaneous processes per user ID.
+ *   Number of clock ticks (jiffies) per second.
+ *   Maximum number of open files.
+ *   Size of a page.
+ *   Total number of pages in physical memory.
+ *   Number of currently available pages in physical memory.
  */
 #include <stdio.h>
 #include <unistd.h>

@@ -1,8 +1,6 @@
 /*
- * Q51 (part 1). Inter-machine communication with sockets: TCP server.
- *      Creates a socket, binds it to a port, waits for one client,
- *      reads a message, echoes it back and exits.
- *      Run: ./bin/051_part001 [port]        (default port 5000)
+ * Q51 (i). Inter-Machine Communication using Socket: Write a program to
+ * communicate between two machines using sockets.
  */
 #include <arpa/inet.h>
 #include <netinet/in.h>

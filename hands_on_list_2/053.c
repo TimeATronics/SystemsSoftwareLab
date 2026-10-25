@@ -1,13 +1,9 @@
 /*
- * Q53. Set an interval timer for 10 seconds and 10 microseconds in each
- *      time domain:
- *   ./bin/053 real     ITIMER_REAL    -> SIGALRM   (wall-clock time)
- *   ./bin/053 virtual  ITIMER_VIRTUAL -> SIGVTALRM (user CPU time)
- *   ./bin/053 prof     ITIMER_PROF    -> SIGPROF   (user + system CPU time)
- *      The first expiry is after 10 seconds; the reload interval is 10
- *      microseconds. The handler prints each expiry and exits after 3.
- *      For VIRTUAL and PROF the 10 seconds are CPU time, so the wall
- *      time can be longer on a machine that is not fully available.
+ * Q53. Interval Timer Programming: Write separate programs for each time
+ * domain to set an interval timer for 10 seconds and 10 microseconds.
+ *   Use ITIMER_REAL
+ *   Use ITIMER_VIRTUAL
+ *   Use ITIMER_PROF
  */
 #include <signal.h>
 #include <stdio.h>

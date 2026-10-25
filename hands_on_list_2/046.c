@@ -1,6 +1,5 @@
 /*
- * Q46. Remove the message queue with msgctl(IPC_RMID).
- *      Check with: $ ipcs -q
+ * Q46. Removing Message Queue: Write a program to remove the message queue.
  */
 #include <stdio.h>
 #include <sys/ipc.h>

@@ -1,7 +1,6 @@
 /*
- * Q43. Send a message to the message queue. Check the queue with $ipcs -q.
- *   ./bin/043             sends the default message
- *   ./bin/043 hello       sends "hello"
+ * Q43. Sending Messages to Message Queue: Write a program to send messages
+ * to the message queue. Check using $ipcs -q.
  */
 #include <stdio.h>
 #include <string.h>

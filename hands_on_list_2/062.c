@@ -1,6 +1,7 @@
 /*
- * Q62. Ignore SIGINT and then reset it to the default action using the
- *      sigaction system call. The second raise terminates the process.
+ * Q62. Signal Handling with sigaction: Write a program to ignore a SIGINT
+ * signal and then reset it to the default action using the sigaction system
+ * call.
  */
 #include <signal.h>
 #include <stdio.h>

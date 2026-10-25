@@ -1,7 +1,7 @@
 /*
- * Q49 (part 1). Rewrite the ticket number creation program using a
- * binary semaphore to protect the read-increment-write critical section.
- * Five children take tickets; the last ticket number must be 5.
+ * Q49 (i). Semaphore Implementation: Write a program to implement a
+ * semaphore to protect any critical section:
+ *   Rewrite the ticket number creation program using a semaphore
  */
 #include <fcntl.h>
 #include <stdio.h>

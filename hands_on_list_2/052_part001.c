@@ -1,9 +1,7 @@
 /*
- * Q52 (part 1). Concurrent server using fork(): every accepted connection
- *      is served by a child process, so several clients are handled at
- *      the same time. Each child echoes one message.
- *      Run: ./bin/052_part001 [port]       (default port 5001)
- *      Connect with: ./bin/051_part002 127.0.0.1 5001
+ * Q52 (i). Concurrent Server Creation: Write a program to create a
+ * concurrent server:
+ *   Use fork
  */
 #include <arpa/inet.h>
 #include <netinet/in.h>

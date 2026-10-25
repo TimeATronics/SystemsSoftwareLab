@@ -1,10 +1,8 @@
 /*
- * Q64 (part 1). Await SIGSTOP. A handler cannot be installed for SIGSTOP
- *      (or SIGKILL): the signal always stops the process, so the handler
- *      is never called.
- *      Run in one terminal: ./bin/064_part001
- *      In another        : ./bin/064_part002 <pid> stop
- *                          ./bin/064_part002 <pid> cont
+ * Q64 (i). Signal SIGSTOP Handling: Create two programs: the first program
+ * awaits the SIGSTOP signal, while the second program sends the signal using
+ * the kill system call. Determine whether the first program successfully
+ * catches the signal or not.
  */
 #include <signal.h>
 #include <stdio.h>

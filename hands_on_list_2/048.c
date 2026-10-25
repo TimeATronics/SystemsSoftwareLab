@@ -1,8 +1,8 @@
 /*
- * Q48. Create a semaphore set and initialise its values:
- *   a. semaphore 0 as a binary semaphore   (value 1)
- *   b. semaphore 1 as a counting semaphore (value 3)
- * Check with: $ ipcs -s
+ * Q48. Semaphore Creation and Initialization: Write a program to create a
+ * semaphore and initialize its value:
+ *   Create a binary semaphore
+ *   Create a counting semaphore
  */
 #include <stdio.h>
 #include <sys/ipc.h>

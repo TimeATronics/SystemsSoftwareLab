@@ -1,10 +1,7 @@
 /*
- * Q52 (part 2). Concurrent server using pthread_create(): every accepted
- *      connection is served by a detached thread. Each thread echoes one
- *      message.
- *      Run: ./bin/052_part002 [port]       (default port 5002)
- *      Connect with: ./bin/051_part002 127.0.0.1 5002
- *      Compile with -pthread.
+ * Q52 (ii). Concurrent Server Creation: Write a program to create a
+ * concurrent server:
+ *   Use pthread_create
  */
 #include <arpa/inet.h>
 #include <netinet/in.h>

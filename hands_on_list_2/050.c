@@ -1,8 +1,6 @@
 /*
- * Q50. Intentionally induce a deadlock with two semaphores: the child
- *      locks semaphore A and waits for B, while the parent locks B and
- *      waits for A. After 5 seconds an alarm prints the confirmation,
- *      kills the child and removes the semaphore set.
+ * Q50. Deadlock: Develop a program that intentionally induces a deadlock
+ * scenario using semaphores.
  */
 #include <signal.h>
 #include <stdio.h>

@@ -1,8 +1,8 @@
 /*
- * Q44. Receive a message from the message queue:
- *   a. with 0 as flag        (blocking, waits for a message)
- *   b. with IPC_NOWAIT       (returns immediately with ENOMSG if empty)
- * Run ./bin/043 first so that part (a) has a message to receive.
+ * Q44. Receiving Messages from Message Queue: Write a program to receive
+ * messages from the message queue:
+ *   With 0 as a flag
+ *   With IPC_NOWAIT as a flag
  */
 #include <stdio.h>
 #include <string.h>

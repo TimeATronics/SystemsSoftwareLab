@@ -1,6 +1,6 @@
 /*
- * Q58. Create three threads and print the IDs of the created threads.
- *      Compile with -pthread.
+ * Q58. Multithreading Exploration: Write a simple program to create three
+ * threads and print the IDs of the created threads.
  */
 #include <pthread.h>
 #include <stdio.h>

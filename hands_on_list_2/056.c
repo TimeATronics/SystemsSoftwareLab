@@ -1,7 +1,6 @@
 /*
- * Q56. Measure the time taken to execute 100 getppid() system calls
- *      using the time stamp counter (rdtsc), which counts processor
- *      cycles since reset.
+ * Q56. Execution Time Measurement: Write a program to measure the time taken
+ * to execute 100 getppid() system calls using a time stamp counter.
  */
 #include <stdio.h>
 #include <unistd.h>

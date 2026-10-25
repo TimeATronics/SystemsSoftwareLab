@@ -1,13 +1,13 @@
 /*
- * Q59. Catch signals with the signal system call:
- *   ./bin/059 segv    SIGSEGV  (invalid memory access)
- *   ./bin/059 int     SIGINT   (Ctrl-C)
- *   ./bin/059 fpe     SIGFPE   (arithmetic fault)
- *   ./bin/059 alarm   SIGALRM  raised by alarm()
- *   ./bin/059 itimer  SIGALRM  raised by setitimer(ITIMER_REAL)
- *   ./bin/059 vtalrm  SIGVTALRM raised by setitimer(ITIMER_VIRTUAL)
- *   ./bin/059 prof    SIGPROF  raised by setitimer(ITIMER_PROF)
- *      The handler prints the signal name and exits.
+ * Q59. Signal Handling: Write separate programs using the signal system call
+ * to catch the following signals:
+ *   SIGSEGV
+ *   SIGINT
+ *   SIGFPE
+ *   SIGALRM (using the alarm system call)
+ *   SIGALRM (using the setitimer system call)
+ *   SIGVTALRM (using the setitimer system call)
+ *   SIGPROF (using the setitimer system call)
  */
 #include <signal.h>
 #include <stdio.h>

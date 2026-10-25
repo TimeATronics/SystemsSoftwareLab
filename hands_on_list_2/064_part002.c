@@ -1,7 +1,8 @@
 /*
- * Q64 (part 2). Send SIGSTOP or SIGCONT with the kill system call:
- *      ./bin/064_part002 <pid>        sends SIGSTOP
- *      ./bin/064_part002 <pid> cont   sends SIGCONT
+ * Q64 (ii). Signal SIGSTOP Handling: Create two programs: the first program
+ * awaits the SIGSTOP signal, while the second program sends the signal using
+ * the kill system call. Determine whether the first program successfully
+ * catches the signal or not.
  */
 #include <signal.h>
 #include <stdio.h>

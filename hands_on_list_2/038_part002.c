@@ -1,8 +1,6 @@
 /*
- * Q38 (part 2). FIFO two-way communication: side B. Reads from
- * fifo_a2b first, then writes the reply into fifo_b2a.
- * Run in one terminal: ./bin/038_part002
- * Run in another    : ./bin/038_part001
+ * Q38 (ii). FIFO Communication (Two-Way): Write two programs to establish
+ * communication through FIFO using two-way communication.
  */
 #include <fcntl.h>
 #include <stdio.h>
@@ -11,8 +9,8 @@
 #include <unistd.h>
 
 int main(void) {
-    mkfifo("fifo_a2b", 0666); /* ignore EEXIST on later runs */
-    mkfifo("fifo_b2a", 0666);
+    mknod("fifo_a2b", S_IFIFO | 0666, 0); /* ignore EEXIST on later runs */
+    mknod("fifo_b2a", S_IFIFO | 0666, 0);
 
     int r = open("fifo_a2b", O_RDONLY); /* blocks until A writes */
     char buf[128];

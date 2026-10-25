@@ -1,6 +1,6 @@
 /*
- * Q33. Two-way communication between the parent and the child using two
- *      pipes: pipe1 for parent to child and pipe2 for child to parent.
+ * Q33. Two-Way Communication: Write a program to send and receive data
+ * between the parent and child processes using two-way communication.
  */
 #include <stdio.h>
 #include <string.h>

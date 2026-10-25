@@ -1,8 +1,6 @@
 /*
- * Q55. Set a system resource limit using the setrlimit system call.
- *      The soft limit of RLIMIT_NOFILE is lowered to 100; once lowered,
- *      the soft limit cannot be raised above the hard limit again by an
- *      unprivileged process.
+ * Q55. Setting System Resource Limit: Write a program to set a system
+ * resource limit using the setrlimit system call.
  */
 #include <stdio.h>
 #include <sys/resource.h>

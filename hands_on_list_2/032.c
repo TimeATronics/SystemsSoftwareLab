@@ -1,5 +1,6 @@
 /*
- * Q32. Send data from the parent process to the child process through a pipe.
+ * Q32. Data Transmission from Parent to Child: Develop a simple program to
+ * send data from the parent process to the child process.
  */
 #include <stdio.h>
 #include <string.h>

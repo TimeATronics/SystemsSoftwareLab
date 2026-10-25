@@ -1,7 +1,6 @@
 /*
- * Q45. Change the permissions of an existing message queue with the
- *      msqid_ds structure: read it with IPC_STAT, change msg_perm.mode
- *      and write it back with IPC_SET.
+ * Q45. Changing Message Queue Permissions: Write a program to change the
+ * existing message queue permissions using the msqid_ds structure.
  */
 #include <stdio.h>
 #include <sys/ipc.h>

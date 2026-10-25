@@ -1,8 +1,10 @@
 /*
- * Q47. Shared memory operations: write data, attach with SHM_RDONLY and
- *      try to overwrite it, detach and remove the segment.
- *      The overwrite attempt runs in a child process because writing into
- *      a read-only mapping raises SIGSEGV and kills it.
+ * Q47. Shared Memory Operations: Write a program to create shared memory and
+ * perform the following operations:
+ *   Write some data to the shared memory
+ *   Attach with O_RDONLY and check whether you are able to overwrite
+ *   Detach the shared memory
+ *   Remove the shared memory
  */
 #include <signal.h>
 #include <stdio.h>

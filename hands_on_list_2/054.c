@@ -1,7 +1,6 @@
 /*
- * Q54. Print the system resource limits using the getrlimit system call.
- *      Each resource has a soft limit (rlim_cur) and a hard limit
- *      (rlim_max); the value RLIM_INFINITY means unlimited.
+ * Q54. System Resource Limits: Write a program to print system resource
+ * limits using the getrlimit system call.
  */
 #include <stdio.h>
 #include <sys/resource.h>

@@ -1,8 +1,6 @@
 /*
- * Q51 (part 2). Inter-machine communication with sockets: TCP client.
- *      Connects to the server, sends one message and prints the reply.
- *      Same machine : ./bin/051_part002 127.0.0.1 5000
- *      Other machine: ./bin/051_part002 <server-ip> 5000
+ * Q51 (ii). Inter-Machine Communication using Socket: Write a program to
+ * communicate between two machines using sockets.
  */
 #include <arpa/inet.h>
 #include <netinet/in.h>

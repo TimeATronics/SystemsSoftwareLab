@@ -1,7 +1,8 @@
 /*
- * Q49 (part 3). Protect two pseudo resources with a counting semaphore
- * initialised to 2: four children each use a resource, at most two may
- * be inside the critical section at the same time.
+ * Q49 (iii). Semaphore Implementation: Write a program to implement a
+ * semaphore to protect any critical section:
+ *   Protect multiple pseudo resources (maybe two) using a counting
+ *   semaphore
  */
 #include <stdio.h>
 #include <stdlib.h>

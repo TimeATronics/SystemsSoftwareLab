@@ -1,7 +1,6 @@
 /*
- * Q41. Create a message queue and print the key and the message queue ID.
- *      Check the queue with: $ ipcs -q
- *      Remove it with:       $ ipcrm -q <msqid>
+ * Q41. Message Queue Creation: Write a program to create a message queue,
+ * and print the key and message queue ID.
  */
 #include <stdio.h>
 #include <sys/ipc.h>

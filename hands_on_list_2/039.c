@@ -1,8 +1,7 @@
 /*
- * Q39. Wait for data to be written into a FIFO within 10 seconds using
- *      select(). The program forks a writer that sends after 2 seconds,
- *      so it can be run on its own. The reader opens the FIFO in
- *      O_NONBLOCK mode and selects on it with a 10 second timeout.
+ * Q39. Waiting for Data in FIFO: Write a program to wait for data to be
+ * written into a FIFO within 10 seconds, utilizing the select system call
+ * with the FIFO.
  */
 #include <fcntl.h>
 #include <stdio.h>
@@ -14,7 +13,7 @@
 #include <unistd.h>
 
 int main(void) {
-    mkfifo("fifo_sel", 0666); /* ignore EEXIST on later runs */
+    mknod("fifo_sel", S_IFIFO | 0666, 0); /* ignore EEXIST on later runs */
 
     pid_t pid = fork();
     if (pid == -1) { perror("fork"); return 1; }
